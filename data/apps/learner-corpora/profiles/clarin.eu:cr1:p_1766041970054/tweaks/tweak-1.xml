@@ -89,11 +89,11 @@
         <Component name="Corpus_design">
             <Element name="corpus_target_language" ValueScheme="string"  cue:class="skosType">
                 <clariah:explanation src="documentation"/>                
-                <clariah:autoCompleteURI>/proxy/skosmos/clavas/ISO639-3</clariah:autoCompleteURI>
+                <clariah:autoCompleteURI>/proxy/skosmos/clavas/ISO639-3/prefLabel/en/notation</clariah:autoCompleteURI>
             </Element>
             <Element name="corpus_L1_language" ValueScheme="string"  cue:class="skosType">
                 <clariah:explanation src="documentation"/>                
-                <clariah:autoCompleteURI>/proxy/skosmos/clavas/ISO639-3</clariah:autoCompleteURI>
+                <clariah:autoCompleteURI>/proxy/skosmos/clavas/ISO639-3/prefLabel/en/notation</clariah:autoCompleteURI>
             </Element>
             <Element name="corpus_size">
                 <clariah:explanation src="documentation"/>
