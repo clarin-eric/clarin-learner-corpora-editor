@@ -93,6 +93,8 @@ function initLC(page) {
 
      dependsOn('corpus_access_requirements', 'corpus_availability', 'restricted');
 /*
+TODO: support cue:enable in ccfparse.js
+TODO: support cue:ccf_enable next to cue:enable
 corpus_access_requirements, corpus_availability='restricted'
 corpus_transcription_guidelines, corpus_transcription='true'
 corpus_single_or_multi_author, corpus_mode='written'
@@ -100,6 +102,7 @@ corpus_text_versioning, corpus_mode='written'
 corpus_language_testing_setting, corpus_production_setting='official_language_testing'
 corpus_proficiency_assignment_method, corpus_proficiency_assignment_available='true'
 corpus_learner_proficiency_assignment_method, corpus_proficiency_assignment_method='learner-centred method'
+TODO: support OR
 corpus_learner_proficiency_assignment_instrument, corpus_learner_proficiency_assignment_method='independent instrument' OR 'total test score'
 corpus_learner_proficiency_documentation, corpus_proficiency_assignment_method='learner-centred method'
 corpus_text_proficiency_assignment_method, corpus_proficiency_assignment_method='text-centred method'
@@ -114,6 +117,7 @@ learner_target_language_immersive_instruction, learner_target_language_instructe
 learner_target_language_proficiency, corpus_proficiency_assignment_method='learner-centred'
 learner_target_language_proficiency_CEFR_conversion, corpus_proficiency_assignment_method='learner-centred'
 learner_target_language_official_language_testing_score, corpus_production_setting='official language testing'
+TODO: support any
 learner_motivation, corpus_motivation_test
 learner_attitude, corpus_motivation_test
 situation_participants_addressee_type, situation_participants_addressee_type='plural' OR 'un-enumerated'
