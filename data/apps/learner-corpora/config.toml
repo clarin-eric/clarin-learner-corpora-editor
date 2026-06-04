@@ -6,6 +6,10 @@ lang.def="en"
 lang.all.i1="en"
 cmdi_version="1.2"
 
+[app.js]
+script="lc.js"
+init="initLC();"
+
 
 [app.prof.corpus]
 prof="clarin.eu:cr1:p_1766041970054"

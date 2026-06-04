@@ -46,10 +46,9 @@
                 <clariah:explanation src="documentation"/>
             </Element>
             <Element name="corpus_availability">
-                <clariah:explanation src="documentation"/>
-                
+                <clariah:explanation src="documentation"/>           
             </Element>
-            <Element name="corpus_access_requirements">
+            <Element name="corpus_access_requirements" cue:enable="corpus_availability='restricted'" >
                 <clariah:explanation src="documentation"/>
             </Element>
             <Element name="corpus_licence">
@@ -115,7 +114,7 @@
                 <clariah:explanation src="documentation"/>
                 <AutoValue/>
             </Element>
-            <Element name="corpus_transcription_guidelines">
+            <Element name="corpus_transcription_guidelines" cue:enable="corpus_transcription='true'">
                 <clariah:explanation src="documentation"/>
                 
             </Element>
@@ -125,11 +124,11 @@
             <Element name="corpus_privacy_protection_documentation">
                 <clariah:explanation src="documentation"/>
             </Element>
-            <Element name="corpus_single_or_multi_author">
+            <Element name="corpus_single_or_multi_author" cue:enable="corpus_mode='written'">
                 <clariah:explanation src="documentation"/>
                 
             </Element>
-            <Element name="corpus_text_versioning">
+            <Element name="corpus_text_versioning" cue:enable="corpus_mode='written'">
                 <clariah:explanation src="documentation"/>
             </Element>
             <Element name="corpus_longitudinal">
@@ -148,7 +147,7 @@
                 <clariah:explanation src="documentation"/>
                 
             </Element>
-            <Element name="corpus_language_testing_setting">
+            <Element name="corpus_language_testing_setting" cue:enable="corpus_production_setting='official_language_testing'">
                 <clariah:explanation src="documentation"/>
             </Element>
             <Element name="corpus_proficiency_level">
@@ -158,28 +157,28 @@
             <Element name="corpus_proficiency_assignment_available">
                 <clariah:explanation src="documentation"/>
             </Element>
-            <Element name="corpus_proficiency_assignment_method">
+            <Element name="corpus_proficiency_assignment_method" cue:enable="corpus_proficiency_assignment_available='true'">
                 <clariah:explanation src="documentation"/>
                 
             </Element>
-            <Element name="corpus_learner_proficiency_assignment_method">
+            <Element name="corpus_learner_proficiency_assignment_method" cue:enable="corpus_proficiency_assignment_method='learner-centred method'">
                 <clariah:explanation src="documentation"/>
                 
             </Element>
-            <Element name="corpus_learner_proficiency_assignment_instrument">
+            <Element name="corpus_learner_proficiency_assignment_instrument" cue:enable="corpus_learner_proficiency_assignment_method='independent instrument' OR 'total test score'">
                 <clariah:explanation src="documentation"/>
             </Element>
-            <Element name="corpus_learner_proficiency_documentation">
+            <Element name="corpus_learner_proficiency_documentation" cue:enable="corpus_proficiency_assignment_method='learner-centred method'">
                 <clariah:explanation src="documentation"/>
             </Element>
-            <Element name="corpus_text_proficiency_assignment_method">
+            <Element name="corpus_text_proficiency_assignment_method" cue:enable="corpus_proficiency_assignment_method='text-centred method'">
                 <clariah:explanation src="documentation"/>
                 
             </Element>
-            <Element name="corpus_text_proficiency_assignment_instrument">
+            <Element name="corpus_text_proficiency_assignment_instrument" cue:enable="corpus_proficiency_assignment_method='text-centred method'">
                 <clariah:explanation src="documentation"/>
             </Element>
-            <Element name="corpus_text_proficiency_documentation">
+            <Element name="corpus_text_proficiency_documentation" cue:enable="corpus_proficiency_assignment_method='text-centred method'">
                 <clariah:explanation src="documentation"/>
             </Element>
             <Element name="corpus_motivation_test">
@@ -223,7 +222,7 @@
                     <clariah:explanation src="documentation"/>
                     
                 </Element>
-                <Element name="text_version">
+                <Element name="text_version" cue:enable="corpus_text_versioning='true'">
                     <clariah:explanation src="documentation"/>
                 </Element>
                 <Element name="text_time_of_creation">
@@ -236,10 +235,10 @@
                     <clariah:explanation src="documentation"/>
                     
                 </Element>
-                <Element name="text_proficiency">
+                <Element name="text_proficiency" cue:enable="proficiency_assignment_method='text-centred'">
                     <clariah:explanation src="documentation"/>
                 </Element>
-                <Element name="text_official_language_testing_score">
+                <Element name="text_official_language_testing_score" cue:enable="data_production_setting='language testing setting'">
                     <clariah:explanation src="documentation"/>
                 </Element>
                 <Element name="text_proficiency_CEFR_conversion">
@@ -284,13 +283,13 @@
                     <Element name="learner_impairment">
                         <clariah:explanation src="documentation"/>
                     </Element>
-                    <Element name="learner_impairment_details">
+                    <Element name="learner_impairment_details" cue:enable="learner_impairment='true'">
                         <clariah:explanation src="documentation"/>
                     </Element>
                     <Element name="learner_atypical_learning">
                         <clariah:explanation src="documentation"/>
                     </Element>
-                    <Element name="learner_atypical_learning_details">
+                    <Element name="learner_atypical_learning_details" cue:enable="learner_atypical_learning='true'">
                         <clariah:explanation src="documentation"/>
                     </Element>
                 </Component>
@@ -302,7 +301,7 @@
                     <Element name="learner_target_language_instructed">
                         <clariah:explanation src="documentation"/>
                     </Element>
-                    <Element name="learner_target_language_immersive_instruction">
+                    <Element name="learner_target_language_immersive_instruction" cue:enable="learner_target_language_instructed = 'true'">
                         <clariah:explanation src="documentation"/>
                     </Element>
                     <Element name="learner_target_language_environment">
@@ -335,14 +334,14 @@
                     <Element name="learner_target_language_use_social_media">
                         <clariah:explanation src="documentation"/>
                     </Element>
-                    <Element name="learner_target_language_proficiency">
+                    <Element name="learner_target_language_proficiency" cue:enable="corpus_proficiency_assignment_method='learner-centred'">
                         <clariah:explanation src="documentation"/>
                     </Element>
-                    <Element name="learner_target_language_proficiency_CEFR_conversion">
+                    <Element name="learner_target_language_proficiency_CEFR_conversion" cue:enable="corpus_proficiency_assignment_method='learner-centred'">
                         <clariah:explanation src="documentation"/>
                         
                     </Element>
-                    <Element name="learner_target_language_official_language_testing_score">
+                    <Element name="learner_target_language_official_language_testing_score" cue:enable="corpus_production_setting='official language testing'">
                         <clariah:explanation src="documentation"/>
                     </Element>
                 </Component>
@@ -423,10 +422,10 @@
                     </Component>
                 </Component>
                 <Component name="Learner_other_differences">
-                    <Element name="learner_motivation">
+                    <Element name="learner_motivation" cue:enable="corpus_motivation_test">
                         <clariah:explanation src="documentation"/>
                     </Element>
-                    <Element name="learner_attitude">
+                    <Element name="learner_attitude" cue:enable="corpus_motivation_test">
                         <clariah:explanation src="documentation"/>
                     </Element>
                     <Element name="learner_aptitude">
@@ -452,7 +451,7 @@
                         <clariah:explanation src="documentation"/>
                         
                     </Element>
-                    <Element name="situation_participants_addressee_type">
+                    <Element name="situation_participants_addressee_type" cue:enable="situation_participants_addressee_type='plural' OR 'un-enumerated'">
                         <clariah:explanation src="documentation"/>
                         
                     </Element>

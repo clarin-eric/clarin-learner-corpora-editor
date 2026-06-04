@@ -21,10 +21,10 @@ var ccfOptions = {
         label: 'Back'
     },
     yes: {
-        label: 'yes'
+        label: 'true'
     },
     no: {
-        label: 'no'
+        label: 'false'
     },
     language: 'en',
     alert: {

@@ -57,7 +57,7 @@
                     </Vocabulary>
                 </ValueScheme>
             </Element>
-            <Element name="corpus_access_requirements" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:lcr_availability="restricted" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+            <Element name="corpus_access_requirements" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:enable="corpus_availability='restricted'" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
                 <Documentation>Description: Access requirements; Condition: if corpus_availability = "restricted"; Further details and examples: academic use</Documentation>
             </Element>
             <Element name="corpus_licence" ValueScheme="string" CardinalityMin="1" CardinalityMax="1">
@@ -138,7 +138,7 @@
                 <Documentation>Description: Were the language samples included in the corpus transcribed?; Fixed attributes: true, false</Documentation>
                 <AutoValue></AutoValue>
             </Element>
-            <Element name="corpus_transcription_guidelines" CardinalityMin="1" CardinalityMax="unbounded" cue:lcr_corpustranscription="true" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+            <Element name="corpus_transcription_guidelines" CardinalityMin="1" CardinalityMax="unbounded" cue:enable="corpus_transcription='true'" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
                 <Documentation>Description: Link to transcription guidelines; Condition: if corpus_transcription = true; Fixed attributes: readme file, corpus documentation, NA</Documentation>
                 <ValueScheme>
                     <Vocabulary>
@@ -156,7 +156,7 @@
             <Element name="corpus_privacy_protection_documentation" ValueScheme="anyURI" CardinalityMin="1" CardinalityMax="1">
                 <Documentation>Description: Link to privacy protection documentation; if corpus_privacy-protection = true; Further details and examples: Examples include guidelines, consent form, etc.</Documentation>
             </Element>
-            <Element name="corpus_single_or_multi_author" CardinalityMin="1" CardinalityMax="unbounded" cue:lcr_corpusmode="written" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+            <Element name="corpus_single_or_multi_author" CardinalityMin="1" CardinalityMax="unbounded" cue:enable="corpus_mode='written'" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
                 <Documentation>Description: Were individual texts written by a single author?; Condition: if corpus_mode = "written"; Fixed attributes: single author, multiple author</Documentation>
                 <ValueScheme>
                     <Vocabulary>
@@ -167,7 +167,7 @@
                     </Vocabulary>
                 </ValueScheme>
             </Element>
-            <Element name="corpus_text_versioning" ValueScheme="boolean" CardinalityMin="1" CardinalityMax="1" cue:lcr_corpusmode="written" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+            <Element name="corpus_text_versioning" ValueScheme="boolean" CardinalityMin="1" CardinalityMax="1" cue:enable="corpus_mode='written'" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
                 <Documentation>Description: Does the corpus include several versions of the same text by the same learner?; Condition: if corpus_mode = "written"; Fixed attributes: true, false; Further details and examples: Please also answer true to this question if the corpus includes texts with revisions identified by clear mark-up.</Documentation>
             </Element>
             <Element name="corpus_longitudinal" ValueScheme="boolean" CardinalityMin="1" CardinalityMax="1">
@@ -195,7 +195,7 @@
                     </Vocabulary>
                 </ValueScheme>
             </Element>
-            <Element name="corpus_language_testing_setting" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:lcr_corpusproductionsetting="official_language_testing" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+            <Element name="corpus_language_testing_setting" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:enable="corpus_production_setting='official_language_testing'" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
                 <Documentation>Description: Full name of the official language test; Condition: if corpus_production_setting = "official_language_testing"; Further details and examples: Test of English as a Foreign Language/Cambridge Advanced Certificate, International English Language Testing System, Certificato di Conoscenza della Lingua Italiana</Documentation>
             </Element>
             <Element name="corpus_proficiency_level" CardinalityMin="1" CardinalityMax="unbounded">
@@ -214,7 +214,7 @@
             <Element name="corpus_proficiency_assignment_available" ValueScheme="boolean" CardinalityMin="1" CardinalityMax="1">
                 <Documentation>Description: Does the corpus contain proficiency scores for individual learners or texts?; Fixed attributes: true, false</Documentation>
             </Element>
-            <Element name="corpus_proficiency_assignment_method" CardinalityMin="1" CardinalityMax="unbounded" cue:lcr_corpusproficiencyassignmentavailable="true" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+            <Element name="corpus_proficiency_assignment_method" CardinalityMin="1" CardinalityMax="unbounded" cue:enable="corpus_proficiency_assignment_available='true'" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
                 <Documentation>Description: Method of proficiency level assignment; Condition: if corpus_proficiency_assignment_available ="true"; Fixed attributes: learner-centred method, text-centred method; Further details and examples: Learner-centred methods relate to methods by which a proficiency level is assigned to each learner independently of the collected text. Text-centred methods refer to methods by which proficiency scores are assigned to individual texts (cf. Carlsen 2012).</Documentation>
                 <ValueScheme>
                     <Vocabulary>
@@ -225,7 +225,7 @@
                     </Vocabulary>
                 </ValueScheme>
             </Element>
-            <Element name="corpus_learner_proficiency_assignment_method" CardinalityMin="1" CardinalityMax="unbounded" cue:lcr_corpusproficiencyassignmentmethod="learner-centred method" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+            <Element name="corpus_learner_proficiency_assignment_method" CardinalityMin="1" CardinalityMax="unbounded" cue:enable="corpus_proficiency_assignment_method='learner-centred method'" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
                 <Documentation>Description: How was the proficiency of the learners evaluated?; Condition: if corpus_proficiency_assignment_method="learner-centred method"; Fixed attributes: independent instrument, total test score, other; Further details and examples: Select "total test score" for contexts where the text was written for an official language test with other components</Documentation>
                 <ValueScheme>
                     <Vocabulary>
@@ -237,13 +237,13 @@
                     </Vocabulary>
                 </ValueScheme>
             </Element>
-            <Element name="corpus_learner_proficiency_assignment_instrument" ValueScheme="string" CardinalityMin="1" CardinalityMax="unbounded">
+            <Element name="corpus_learner_proficiency_assignment_instrument" ValueScheme="string" CardinalityMin="1" CardinalityMax="unbounded" cue:enabled="corpus_learner_proficiency_assignment_method='independent instrument' OR 'total test score'">
                 <Documentation>Description: Name of instrument used to evaluate learners’ proficiency; Condition: if corpus_learner_proficiency_assignment_method="independent instrument" OR " total test score"; Further details and examples: Oxford Quick Placement Test, DIALANG, Vocabulary Level Test, Cambridge English, TOEFL, IELTS, in-house…</Documentation>
             </Element>
-            <Element name="corpus_learner_proficiency_documentation" ValueScheme="anyURI" CardinalityMin="0" CardinalityMax="unbounded">
+            <Element name="corpus_learner_proficiency_documentation" ValueScheme="anyURI" CardinalityMin="0" CardinalityMax="unbounded" cue:enable="corpus_proficiency_assignment_method='learner-centred method'">
                 <Documentation>Description: Link to relevant documentation on how learners were evaluated; Condition: if corpus_proficiency_assignment_method="learner-centred method"</Documentation>
             </Element>
-            <Element name="corpus_text_proficiency_assignment_method" CardinalityMin="1" CardinalityMax="unbounded">
+            <Element name="corpus_text_proficiency_assignment_method" CardinalityMin="1" CardinalityMax="unbounded" cue:enable="corpus_proficiency_assignment_method='text-centred method'">
                 <Documentation>Description: How were the texts evaluated? Condition: if corpus_proficiency_assignment_method="text-centred method"; Fixed attributes: score on text, teacher's evaluation, post-hoc assignment; Further details and examples: Select "total test score" for contexts where the text was written for an official language test with other components</Documentation>
                 <ValueScheme>
                     <Vocabulary>
@@ -255,10 +255,10 @@
                     </Vocabulary>
                 </ValueScheme>
             </Element>
-            <Element name="corpus_text_proficiency_assignment_instrument" ValueScheme="string" CardinalityMin="1" CardinalityMax="1">
+            <Element name="corpus_text_proficiency_assignment_instrument" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:enable="corpus_proficiency_assignment_method='text-centred method'">
                 <Documentation>Description: Name of instrument used to evaluate texts’ proficiency; Condition: if corpus_proficiency_assignment_method="text-centred method"; Further details and examples: Cambridge English, TOEFL,…</Documentation>
             </Element>
-            <Element name="corpus_text_proficiency_documentation" ValueScheme="anyURI" CardinalityMin="0" CardinalityMax="unbounded">
+            <Element name="corpus_text_proficiency_documentation" ValueScheme="anyURI" CardinalityMin="0" CardinalityMax="unbounded" cue:enable="corpus_proficiency_assignment_method='text-centred method'">
                 <Documentation>Description: Link to relevant documentation on how texts were evaluated (descriptors, rubric, etc.); Condition: if corpus_proficiency_assignment_method="text-centred method"; Further details and examples: https://merlin-platform.eu/docs/MERLIN_Rating-Grid_DE.pdf</Documentation>
             </Element>
             <Element name="corpus_motivation_test" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded">
@@ -304,7 +304,7 @@
                         <Vocabulary URI="http://hdl.handle.net/11459/CLAVAS_810f8d2a-6723-3ba6-2e57-41d6d3844816" ValueProperty="http://www.w3.org/2004/02/skos/core#prefLabel" ValueLanguage="en"/>
                     </ValueScheme>
                 </Element>
-                <Element name="text_version" ValueScheme="string" CardinalityMin="1" CardinalityMax="1">
+                <Element name="text_version" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:enable="corpus_text_versioning='true'">
                     <Documentation>Description: Text version number; Condition: if corpus_text_versioning = true</Documentation>
                 </Element>
                 <Element name="text_time_of_creation" ValueScheme="dateTime" CardinalityMin="0" CardinalityMax="1">
@@ -330,10 +330,10 @@
                         </Vocabulary>
                     </ValueScheme>
                 </Element>
-                <Element name="text_proficiency" ValueScheme="string" CardinalityMin="1" CardinalityMax="1">
+                <Element name="text_proficiency" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:enable="proficiency_assignment_method='text-centred'">
                     <Documentation>Description: Proficiency score or level for the text; Condition: if proficiency_assignment_method = "text-centred"</Documentation>
                 </Element>
-                <Element name="text_official_language_testing_score" ValueScheme="string" CardinalityMin="1" CardinalityMax="1">
+                <Element name="text_official_language_testing_score" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:enable="data_production_setting='language testing setting'">
                     <Documentation>Description: Separate test score for the text, if written as part of an official language test; Condition: if data_production_setting = "language testing setting"; Further details and examples: Levels for CEFR, figures for IELTS, etc.</Documentation>
                 </Element>
                 <Element name="text_proficiency_CEFR_conversion" CardinalityMin="0" CardinalityMax="1">
@@ -413,13 +413,13 @@
                     <Element name="learner_impairment" ValueScheme="boolean" CardinalityMin="1" CardinalityMax="1">
                         <Documentation>Description: Does the learner have an impairment?; Fixed attributes: true, false</Documentation>
                     </Element>
-                    <Element name="learner_impairment_details" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded">
+                    <Element name="learner_impairment_details" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" cue:enable="learner_impairment='true'">
                         <Documentation>Description: Learner impairment; Condition: if  learner_impairment = true; Further details and examples: Preferably choose among our list of examples. You can use tuples to provide more info about the conditions (e.g. {hearing impairment, permanent}). Examples: hearing impairment/speech impairment/vision impairment/other impairments</Documentation>
                     </Element>
                     <Element name="learner_atypical_learning" ValueScheme="boolean" CardinalityMin="0" CardinalityMax="1">
                         <Documentation>Description: Is the learner characterized by atypical learning or atypical (cognitive) development?; Fixed attributes: true, false</Documentation>
                     </Element>
-                    <Element name="learner_atypical_learning_details" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded">
+                    <Element name="learner_atypical_learning_details" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" cue:enable="learner_atypical_learning='true'">
                         <Documentation>Description: Type of atypical learning or atypical development; Condition: if learner_atypical_learning = true; Further details and examples: Examples: speech sound disorder, language disorder, dyslexia, attention deficit hyperactivity disorder</Documentation>
                     </Element>
                 </Component>
@@ -433,7 +433,7 @@
                     <Element name="learner_target_language_instructed" ValueScheme="boolean" CardinalityMin="1" CardinalityMax="1">
                         <Documentation>Description: Was the learner in an instructed learning context at the time of data collection?; Fixed attributes: true, false</Documentation>
                     </Element>
-                    <Element name="learner_target_language_immersive_instruction" ValueScheme="boolean" CardinalityMin="1" CardinalityMax="1">
+                    <Element name="learner_target_language_immersive_instruction" ValueScheme="boolean" CardinalityMin="1" CardinalityMax="1" cue:enable="learner_target_language_instructed = 'true'">
                         <Documentation>Description: Was the learner in an immersive instructed learning context at the time of data collection?; Condition: if learner_target_language_instructed = true;  Fixed attributes: true, false; Further details and examples: Language immersion is a method used to teach students a second language where the language being taught is primarily used during teaching.</Documentation>
                     </Element>
                     <Element name="learner_target_language_environment" ValueScheme="boolean" CardinalityMin="1" CardinalityMax="1">
@@ -466,10 +466,10 @@
                     <Element name="learner_target_language_use_social_media" ValueScheme="string" CardinalityMin="1" CardinalityMax="1">
                         <Documentation>Description: Social media experience; Further details and examples: Recommended scale: Never, rarely, once a month, once a week, daily</Documentation>
                     </Element>
-                    <Element name="learner_target_language_proficiency" ValueScheme="string" CardinalityMin="1" CardinalityMax="unbounded">
+                    <Element name="learner_target_language_proficiency" ValueScheme="string" CardinalityMin="1" CardinalityMax="unbounded" cue:enable="corpus_proficiency_assignment_method='learner-centred'">
                         <Documentation>Description: Learner proficiency; Condition: if corpus_proficiency_assignment_method = "learner-centred"; Further details and examples: Results of language test, in-house test, or self-assessment</Documentation>
                     </Element>
-                    <Element name="learner_target_language_proficiency_CEFR_conversion" CardinalityMin="0" CardinalityMax="1">
+                    <Element name="learner_target_language_proficiency_CEFR_conversion" CardinalityMin="0" CardinalityMax="1" cue:enable="corpus_proficiency_assignment_method='learner-centred'">
                         <Documentation>Description: Learner proficiency (CEFR); Condition: if corpus_proficiency_assignment_method = "learner-centred"; Fixed attributes: A1, A2, B1, B2, C1, C2; Further details and examples: If possible, provide proficiency converted to CEFR</Documentation>
                         <ValueScheme>
                             <Vocabulary>
@@ -484,7 +484,7 @@
                             </Vocabulary>
                         </ValueScheme>
                     </Element>
-                    <Element name="learner_target_language_official_language_testing_score" ValueScheme="string" CardinalityMin="1" CardinalityMax="1">
+                    <Element name="learner_target_language_official_language_testing_score" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:enable="corpus_production_setting='official language testing'">
                         <Documentation>Description: Official language test score; Condition: if corpus_production_setting = "official language testing"</Documentation>
                     </Element>
                 </Component>
@@ -592,13 +592,13 @@
                     </Component>
                 </Component>
                 <Component name="Learner_other_differences" ComponentRef="clarin.eu:cr1:c_1758888743545" CardinalityMin="1" CardinalityMax="1">
-                    <Element name="learner_motivation" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+                    <Element name="learner_motivation" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1" cue:enable="corpus_motivation_test">
                         <Documentation>Description: Motivation test score; Condition: if corpus_motivation_test defined; Further details and examples: Use tuples if necessary</Documentation>
                     </Element>
-                    <Element name="learner_attitude" ValueScheme="string" CardinalityMin="1" CardinalityMax="1">
+                    <Element name="learner_attitude" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:enable="corpus_motivation_test">
                         <Documentation>Description: Attitude test score; Condition: if corpus_attitude_test defined; Further details and examples: Use tuples if necessary</Documentation>
                     </Element>
-                    <Element name="learner_aptitude" ValueScheme="string" CardinalityMin="1" CardinalityMax="1">
+                    <Element name="learner_aptitude" ValueScheme="string" CardinalityMin="1" CardinalityMax="1 cue:enable="corpus_motivation_test"">
                         <Documentation>Description: Aptitude test score; Condition: if corpus_aptitude_test defined; Further details and examples: Use tuples if necessary</Documentation>
                     </Element>
                 </Component>
@@ -637,7 +637,7 @@
                             </Vocabulary>
                         </ValueScheme>
                     </Element>
-                    <Element name="situation_participants_addressee_type" CardinalityMin="0" CardinalityMax="unbounded">
+                    <Element name="situation_participants_addressee_type" CardinalityMin="0" CardinalityMax="unbounded" cue:enable=" cue:enable="situation_participants_addressee_type='plural' OR 'un-enumerated'">
                         <Documentation>Description: Personal relationship with addressees; Condition: if situation_participants_addressee_type = "plural" or "un-enumerated"; Fixed attributes: classmates, student-teacher, colleagues, family members, friends, strangers</Documentation>
                         <ValueScheme>
                             <Vocabulary>
