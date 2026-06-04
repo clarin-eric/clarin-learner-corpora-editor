@@ -93,11 +93,13 @@ function initLC(page) {
 
      dependsOn('corpus_access_requirements', 'corpus_availability', 'restricted');
 /*
+TODO: clear the value if the element gets disabled
+  MAYBE: keep the value so its still there if the user switches back
 TODO: make a public release
 TODO: support cue:enable in ccfparse.js incl. rebinding onchange with duplicates & clones
 TODO: support cue:ccf_enable next to cue:enable
 TODO: curently only supports preceding siblings extend into preceding (explicit)
-corpus_access_requirements, corpus_availability='restricted'
+corpus_access_requirements,corpus_availability='restricted'
 corpus_transcription_guidelines, corpus_transcription='true'
 corpus_single_or_multi_author, corpus_mode='written'
 corpus_text_versioning, corpus_mode='written'
