@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ComponentSpec isProfile="true" CMDVersion="1.2" CMDOriginalVersion="1.2" xsi:noNamespaceSchemaLocation="https://infra.clarin.eu/CMDI/1.x/xsd/cmd-component.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ComponentSpec isProfile="true" CMDVersion="1.2" CMDOriginalVersion="1.2" xsi:noNamespaceSchemaLocation="https://infra.clarin.eu/CMDI/1.x/xsd/cmd-component.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
     <Header>
         <ID>clarin.eu:cr1:p_1766041970054</ID>
         <Name>LCmeta</Name>
@@ -598,7 +598,7 @@
                     <Element name="learner_attitude" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:enable="corpus_motivation_test">
                         <Documentation>Description: Attitude test score; Condition: if corpus_attitude_test defined; Further details and examples: Use tuples if necessary</Documentation>
                     </Element>
-                    <Element name="learner_aptitude" ValueScheme="string" CardinalityMin="1" CardinalityMax="1 cue:enable="corpus_motivation_test"">
+                    <Element name="learner_aptitude" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:enable="corpus_motivation_test">
                         <Documentation>Description: Aptitude test score; Condition: if corpus_aptitude_test defined; Further details and examples: Use tuples if necessary</Documentation>
                     </Element>
                 </Component>
@@ -637,7 +637,7 @@
                             </Vocabulary>
                         </ValueScheme>
                     </Element>
-                    <Element name="situation_participants_addressee_type" CardinalityMin="0" CardinalityMax="unbounded" cue:enable=" cue:enable="situation_participants_addressee_type='plural' OR 'un-enumerated'">
+                    <Element name="situation_participants_addressee_type" CardinalityMin="0" CardinalityMax="unbounded" cue:enable="situation_participants_addressee_type='plural' OR 'un-enumerated'">
                         <Documentation>Description: Personal relationship with addressees; Condition: if situation_participants_addressee_type = "plural" or "un-enumerated"; Fixed attributes: classmates, student-teacher, colleagues, family members, friends, strangers</Documentation>
                         <ValueScheme>
                             <Vocabulary>
