@@ -161,24 +161,24 @@
                 <clariah:explanation src="documentation"/>
                 
             </Element>
-            <Element name="corpus_learner_proficiency_assignment_method" cue:enable="corpus_proficiency_assignment_method='learner-centred method'">
+            <Element name="corpus_learner_proficiency_assignment_method" cue:enable="Corpus_design/corpus_proficiency_assignment_method='learner-centred method'">
                 <clariah:explanation src="documentation"/>
                 
             </Element>
             <Element name="corpus_learner_proficiency_assignment_instrument" cue:enable="corpus_learner_proficiency_assignment_method='independent instrument','total test score'">
                 <clariah:explanation src="documentation"/>
             </Element>
-            <Element name="corpus_learner_proficiency_documentation" cue:enable="corpus_proficiency_assignment_method='learner-centred method'">
+            <Element name="corpus_learner_proficiency_documentation" cue:enable="Corpus_design/corpus_proficiency_assignment_method='learner-centred method'">
                 <clariah:explanation src="documentation"/>
             </Element>
-            <Element name="corpus_text_proficiency_assignment_method" cue:enable="corpus_proficiency_assignment_method='text-centred method'">
+            <Element name="corpus_text_proficiency_assignment_method" cue:enable="Corpus_design/corpus_proficiency_assignment_method='text-centred method'">
                 <clariah:explanation src="documentation"/>
                 
             </Element>
-            <Element name="corpus_text_proficiency_assignment_instrument" cue:enable="corpus_proficiency_assignment_method='text-centred method'">
+            <Element name="corpus_text_proficiency_assignment_instrument" cue:enable="Corpus_design/corpus_proficiency_assignment_method='text-centred method'">
                 <clariah:explanation src="documentation"/>
             </Element>
-            <Element name="corpus_text_proficiency_documentation" cue:enable="corpus_proficiency_assignment_method='text-centred method'">
+            <Element name="corpus_text_proficiency_documentation" cue:enable="Corpus_design/corpus_proficiency_assignment_method='text-centred method'">
                 <clariah:explanation src="documentation"/>
             </Element>
             <Element name="corpus_motivation_test">
@@ -222,7 +222,7 @@
                     <clariah:explanation src="documentation"/>
                     
                 </Element>
-                <Element name="text_version" cue:enable="corpus_text_versioning='true'">
+                <Element name="text_version" cue:enable="Corpus_design/corpus_text_versioning='true'">
                     <clariah:explanation src="documentation"/>
                 </Element>
                 <Element name="text_time_of_creation">
@@ -235,10 +235,10 @@
                     <clariah:explanation src="documentation"/>
                     
                 </Element>
-                <Element name="text_proficiency" cue:enable="corpus_proficiency_assignment_method='text-centred'">
+                <Element name="text_proficiency" cue:enable="Corpus_design/corpus_proficiency_assignment_method='text-centred'">
                     <clariah:explanation src="documentation"/>
                 </Element>
-                <Element name="text_official_language_testing_score" cue:enable="data_production_setting='language testing setting'">
+                <Element name="text_official_language_testing_score" cue:enable="Corpus_design/corpus_production_setting='language testing setting'">
                     <clariah:explanation src="documentation"/>
                 </Element>
                 <Element name="text_proficiency_CEFR_conversion">
@@ -334,14 +334,14 @@
                     <Element name="learner_target_language_use_social_media">
                         <clariah:explanation src="documentation"/>
                     </Element>
-                    <Element name="learner_target_language_proficiency" cue:enable="corpus_proficiency_assignment_method='learner-centred'">
+                    <Element name="learner_target_language_proficiency" cue:enable="Corpus_design/corpus_proficiency_assignment_method='learner-centred'">
                         <clariah:explanation src="documentation"/>
                     </Element>
-                    <Element name="learner_target_language_proficiency_CEFR_conversion" cue:enable="corpus_proficiency_assignment_method='learner-centred'">
+                    <Element name="learner_target_language_proficiency_CEFR_conversion" cue:enable="Corpus_design/corpus_proficiency_assignment_method='learner-centred'">
                         <clariah:explanation src="documentation"/>
                         
                     </Element>
-                    <Element name="learner_target_language_official_language_testing_score" cue:enable="corpus_production_setting='official language testing'">
+                    <Element name="learner_target_language_official_language_testing_score" cue:enable="Corpus_design/corpus_production_setting='official language testing'">
                         <clariah:explanation src="documentation"/>
                     </Element>
                 </Component>
