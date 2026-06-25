@@ -48,8 +48,7 @@
             <Element name="corpus_availability">
                 <clariah:explanation src="documentation"/>           
             </Element>
-            <!--<Element name="corpus_access_requirements" cue:enable="corpus_availability='restricted'" >-->
-            <Element name="corpus_access_requirements" cue:enable="corpus_availability" >
+            <Element name="corpus_access_requirements" cue:enable="corpus_availability='restricted'" >
                 <clariah:explanation src="documentation"/>
             </Element>
             <Element name="corpus_licence">
