@@ -637,7 +637,7 @@
                             </Vocabulary>
                         </ValueScheme>
                     </Element>
-                    <Element name="situation_participants_addressee_type" CardinalityMin="0" CardinalityMax="unbounded" cue:enable="situation_participants_addressee_type='plural' OR 'un-enumerated'">
+                    <Element name="situation_participants_addressee_type" CardinalityMin="0" CardinalityMax="unbounded" cue:enable="situation_participants_addressee='plural' OR 'un-enumerated'">
                         <Documentation>Description: Personal relationship with addressees; Condition: if situation_participants_addressee_type = "plural" or "un-enumerated"; Fixed attributes: classmates, student-teacher, colleagues, family members, friends, strangers</Documentation>
                         <ValueScheme>
                             <Vocabulary>
